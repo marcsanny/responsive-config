@@ -1,0 +1,30 @@
+name: example
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  responsive_config:
+    path: ../responsive_config
+
+  cupertino_icons: ^1.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.1.8
+  flutter_lints: ^1.0.4
+  import_sorter: ^4.6.0
+
+flutter:
+  uses-material-design: true
+
+import_sorter:
+  comments: false
