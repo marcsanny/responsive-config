@@ -3,6 +3,7 @@ import 'package:meta/meta_meta.dart';
 import 'package:responsive_annotation/models/screen_type.dart';
 
 /// An annotation used to specify a variable to generate responsive code for.
+/// Can only be used on non static final fields. 
 @Target({TargetKind.field})
 class ResponsiveVariable<T> {
   /// ResponsiveVariable<T> is used to annotate variables that are responsive.
@@ -28,10 +29,21 @@ class ResponsiveVariable<T> {
         assert(desktop != null),
         assert(widescreen != null);
 
+  /// Value used for [ScreenType.mobile]. Must not be null.
   final T mobile;
+
+  /// Value used for [ScreenType.tablet]. Must not be null.
   final T tablet;
+
+  /// Value used for [ScreenType.laptop]. Must not be null.
   final T laptop;
+
+  /// Value used for [ScreenType.desktop]. Must not be null.
   final T desktop;
+
+  /// Value used for [ScreenType.widescreen]. Must not be null.
   final T widescreen;
+  
+  /// Type of the variable is set automatically from the annotation.
   final Type type;
 }

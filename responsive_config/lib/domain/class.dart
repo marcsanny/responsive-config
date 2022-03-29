@@ -46,7 +46,7 @@ class Class {
 
     Iterable<Variable> variables() sync* {
       for (final fieldElement in element.fields) {
-        if (fieldElement.isStatic) continue;
+        if (fieldElement.isStatic || !fieldElement.isFinal) continue;
         yield Variable.fromElement(fieldElement);
       }
     }

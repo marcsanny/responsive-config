@@ -7,7 +7,7 @@ import 'package:responsive_annotation/models/screen_type.dart';
 @Target({TargetKind.classType})
 class ResponsiveConfig {
   /// ResponsiveConfig is used to annotate classes that contains responsive fields.
-  /// Default breakpoints values are:
+  /// Default breakpoint values are:
   /// * `mobile` = 320; Note: must be bigger than 0
   /// * `tablet` = 768; Note: must be bigger than [mobile]
   /// * `laptop` = 992; Note: must be bigger than [tablet]

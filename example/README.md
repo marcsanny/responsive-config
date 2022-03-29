@@ -9,9 +9,11 @@ dev_dependencies:
   build_runner: <latest>
   responsive_config: <latest>
 
-Annotate your code with classes defined in [responsive_annotation]().
+Annotate your code with classes defined in [responsive_annotation](https://github.com/marcsanny/responsive-config/tree/main/responsive_annotation/lib/annotations).
 
 See [lib/app_config.dart](https://github.com/marcsanny/responsive-config/blob/main/example/lib/app_config.dart) for an example of a file using these annotations.
+
+See [lib/app_config.g.dart](https://github.com/marcsanny/responsive-config/blob/main/example/lib/app_config.g.dart) for an example of a generated file with responsive code.
 
 See [build.yaml](https://github.com/marcsanny/responsive-config/blob/main/example/build.yaml) for an example of a file using build options.
 

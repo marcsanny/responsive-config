@@ -29,9 +29,9 @@
 build/
 **/.fvm/flutter_sdk
 example/lib/generated_plugin_registrant.dart
-*.g.dart
-*.mocks.dart
-*.gr.dart
+responsive_config/*.g.dart
+responsive_config/*.mocks.dart
+responsive_config/*.gr.dart
 
 # Android related
 **/android/**/gradle-wrapper.jar
