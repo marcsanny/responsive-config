@@ -11,8 +11,7 @@ abstract class Example {
     required this.title,
   });
 
-  factory Example.of(BuildContext context) =>
-      _$ResponsiveExample.of(context);
+  factory Example.of(BuildContext context) => _$ResponsiveExample.of(context);
 
   @ResponsiveVariable<double>(
     mobile: 32,

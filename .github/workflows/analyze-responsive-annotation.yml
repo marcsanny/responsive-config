@@ -1,0 +1,34 @@
+name: Analyze & test responsive_annotation
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  analyze_and_test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./responsive_annotation
+    steps:
+      - uses: actions/checkout@v3
+      # - uses: kuhnroyal/flutter-fvm-config-action@v1
+      - uses: subosito/flutter-action@v2
+        with:
+          # Get flutter version from fvm
+          flutter-version: 2.10.3 # ${{ env.FLUTTER_VERSION }}
+          # channel: ${{ env.FLUTTER_CHANNEL }}
+      - name: Get flutter packages
+        run: |
+          echo Getting flutter packages
+          flutter pub get
+      - name: Check code formatting
+        run: |
+          echo Checking code formatting
+          flutter format lib/* -l 80 --set-exit-if-changed
+          echo Analyzing code
+          flutter analyze
+      - name: Test annotations
+        run: |
+          echo Testing annotations
+          flutter test

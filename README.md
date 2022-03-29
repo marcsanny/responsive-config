@@ -18,7 +18,7 @@ The annotation package for responsive_config.
 
 Import it into your pubspec `dependencies:` section.
 
-## example
+# example
 
 [Source code](https://github.com/marcsanny/responsive-config/tree/main/example)
 

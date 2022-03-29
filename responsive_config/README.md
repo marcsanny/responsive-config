@@ -80,7 +80,7 @@ class CustomClassWidescreen extends CustomClass {
 }
 ```
 
-# Running the code generator
+## Running the code generator
 
 Once you have added the annotations to your code you then need to run the code
 generator to generate the missing `.g.dart` generated dart files.
@@ -88,7 +88,7 @@ generator to generate the missing `.g.dart` generated dart files.
 Run `flutter pub run build_runner build` in your package
 directory.
 
-# Annotation values
+## Annotation values
 This package allows you to annotate 
 - **classes** (only), with:
 ```dart
@@ -118,21 +118,21 @@ Note that you can only provide simple types `T`
 or non parameterized default constructors as custom type `T`.
 Parametrized and/or named constructors are not supported yet.
 
-# Screen breakpoints
-## default
+## Screen breakpoints
+### default
 ResponsiveConfig is used to annotate classes that contains responsive fields.
 Default breakpoint values are:
-* `mobile = 320;` **Note**: must be bigger than `0`
-* `tablet = 768;` **Note**: must be bigger than `mobile`
-* `laptop = 992;` **Note**: must be bigger than `tablet`
-* `desktop = 1200;` **Note**: must be bigger than `laptop`
-* `widescreen = 1920;` **Note**: must be bigger than `desktop`
+- `mobile = 320;` **Note**: must be bigger than `0`
+- `tablet = 768;` **Note**: must be bigger than `mobile`
+- `laptop = 992;` **Note**: must be bigger than `tablet`
+- `desktop = 1200;` **Note**: must be bigger than `laptop`
+- `widescreen = 1920;` **Note**: must be bigger than `desktop`
 
-## custom
+### custom
 There are 2 ways to specify custom breakpoints
 - You can provide desired values directly in the annotation, for example:
 ```dart
-@ResponsiveConfig<>(tabletBreakpoint: 700, desktopBreakpoint: 1064)
+@ResponsiveConfig(tabletBreakpoint: 700, desktopBreakpoint: 1064)
 class SampleClass {}
 
 ```

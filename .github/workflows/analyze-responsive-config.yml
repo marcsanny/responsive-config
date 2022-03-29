@@ -1,0 +1,39 @@
+name: Analyze & test responsive_config
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  analyze_and_test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./responsive_config
+    steps:
+      - uses: actions/checkout@v3
+      # - uses: kuhnroyal/flutter-fvm-config-action@v1
+      - uses: subosito/flutter-action@v2
+        with:
+          # Get flutter version from fvm
+          flutter-version: 2.10.3 # ${{ env.FLUTTER_VERSION }}
+          # channel: ${{ env.FLUTTER_CHANNEL }}
+      - name: Get flutter packages
+        run: |
+          echo Getting flutter packages
+          flutter pub get
+      - name: Check code formatting
+        run: |
+          echo Checking code formatting
+          flutter format lib/* -l 80 --set-exit-if-changed
+          echo Analyzing code
+          flutter analyze
+      # TODO: Write tests for responsive_config
+      # - name: Test responsive_config
+      #   run: |
+      #     echo Testing config,
+      #     flutter test
+      - name: Test run generator
+        run: |
+          echo Test running generator
+          flutter pub run build_runner build --delete-conflicting-outputs
