@@ -346,7 +346,7 @@ packages:
       name: responsive_annotation
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.1"
+    version: "0.0.2"
   responsive_config:
     dependency: "direct main"
     description:

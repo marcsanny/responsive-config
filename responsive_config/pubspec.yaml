@@ -1,12 +1,10 @@
 name: responsive_config
-description: A new Flutter package project.
+description: Flutter Responsive code generation package.
 version: 0.0.1
-homepage:
-
-publish_to: 'none'
+repository: https://github.com/marcsanny/responsive-config
 
 environment:
-  sdk: ">=2.16.1 <3.0.0"
+  sdk: ">=2.15.1 <3.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

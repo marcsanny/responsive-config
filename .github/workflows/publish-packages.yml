@@ -1,0 +1,27 @@
+name: Publish to Pub.dev
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  publish:
+    name: Publish if version bumped
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v3
+      - name: 'Publish responsive annotation'
+        uses: k-paxian/dart-package-publisher@master
+        with:
+          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
+          relativePath: responsive_annotation
+          flutter: true
+          skipTests: true
+      - name: 'Publish responsive config'
+        uses: k-paxian/dart-package-publisher@master
+        with:
+          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
+          relativePath: responsive_config
+          flutter: true
+          skipTests: true
