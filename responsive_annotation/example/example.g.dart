@@ -41,35 +41,35 @@ abstract class _$ResponsiveExample {
 
 class _$MobileExample implements Example {
   @override
-  final double margin = 32;
+  final double margin = 32.0;
   @override
   final String title = 'Mobile';
 }
 
 class _$TabletExample implements Example {
   @override
-  final double margin = 64;
+  final double margin = 64.0;
   @override
   final String title = 'Tablet';
 }
 
 class _$LaptopExample implements Example {
   @override
-  final double margin = 96;
+  final double margin = 96.0;
   @override
   final String title = 'Laptop';
 }
 
 class _$DesktopExample implements Example {
   @override
-  final double margin = 128;
+  final double margin = 128.0;
   @override
   final String title = 'Desktop';
 }
 
 class _$WidescreenExample implements Example {
   @override
-  final double margin = 256;
+  final double margin = 256.0;
   @override
   final String title = 'Widescreen';
 }

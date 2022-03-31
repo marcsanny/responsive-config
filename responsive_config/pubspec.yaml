@@ -1,6 +1,6 @@
 name: responsive_config
 description: Flutter Responsive code generation package.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/marcsanny/responsive-config
 
 environment:
