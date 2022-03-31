@@ -1,7 +1,7 @@
 # responsive_config
 
-[![analyze](https://github.com/marcsanny/responsive-config/actions/workflows/analyze-responsive-config.yml/badge.svg)](https://github.com/marcsanny/responsive-confign/actions/workflows/analyze-responsive-config.yml)
-[![build](https://github.com/marcsanny/responsive-config/actions/workflows/publish-packages.yml/badge.svg)](https://github.com/marcsanny/responsive-confign/actions/workflows/publish-packages.yml)
+[![analyze](https://github.com/marcsanny/responsive-config/actions/workflows/analyze-responsive-config.yml/badge.svg)](https://github.com/marcsanny/responsive-config/actions/workflows/analyze-responsive-config.yml)
+[![build](https://github.com/marcsanny/responsive-config/actions/workflows/publish-packages.yml/badge.svg)](https://github.com/marcsanny/responsive-config/actions/workflows/publish-packages.yml)
 
 :warning: This package is still under development, some features might not satisfy expected generated code.
 

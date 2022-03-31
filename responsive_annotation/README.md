@@ -1,7 +1,7 @@
 ## Description
 
-[![analyze](https://github.com/marcsanny/responsive-config/actions/workflows/analyze-responsive-config.yml/badge.svg)](https://github.com/marcsanny/responsive-confign/actions/workflows/analyze-responsive-annotation.yml)
-[![build](https://github.com/marcsanny/responsive-config/actions/workflows/publish-packages.yml/badge.svg)](https://github.com/marcsanny/responsive-confign/actions/workflows/publish-packages.yml)
+[![analyze](https://github.com/marcsanny/responsive-config/actions/workflows/analyze-responsive-config.yml/badge.svg)](https://github.com/marcsanny/responsive-config/actions/workflows/analyze-responsive-annotation.yml)
+[![build](https://github.com/marcsanny/responsive-config/actions/workflows/publish-packages.yml/badge.svg)](https://github.com/marcsanny/responsive-config/actions/workflows/publish-packages.yml)
 
 Defines the annotations used by responsive_config 
 to create code for responsive variables.
