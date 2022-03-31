@@ -4,7 +4,7 @@ analyzer:
   strong-mode:
     implicit-casts: false
   exclude:
-    - lib/**.g.dart
+    - /**.g.dart
     - test/**.g.dart
   errors:
     sort_constructors_first: warning
