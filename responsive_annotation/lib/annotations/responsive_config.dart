@@ -8,11 +8,11 @@ import 'package:responsive_annotation/models/screen_type.dart';
 class ResponsiveConfig {
   /// ResponsiveConfig is used to annotate classes that contains responsive fields.
   /// Default breakpoint values are:
-  /// * `mobile` = 320; Note: must be bigger than 0
-  /// * `tablet` = 768; Note: must be bigger than [mobile]
-  /// * `laptop` = 992; Note: must be bigger than [tablet]
-  /// * `desktop` = 1200; Note: must be bigger than [laptop]
-  /// * `widescreen` = 1920; Note: must be bigger than [desktop]
+  /// * `mobile` = 320; Note: must be bigger than 0.
+  /// * `tablet` = 768; Note: must be bigger than mobile.
+  /// * `laptop` = 992; Note: must be bigger than tablet.
+  /// * `desktop` = 1200; Note: must be bigger than laptop.
+  /// * `widescreen` = 1920; Note: must be bigger than desktop.
   ///
   /// To change the default breakpoints, you can provide them directly in annotation
   /// or specify them in `build.yaml` file, to enable them globally.
@@ -47,6 +47,7 @@ class ResponsiveConfig {
             tabletBreakpoint > (mobileBreakpoint ?? DefaultBreakpoints.mobile)),
         assert(mobileBreakpoint == null || mobileBreakpoint > 0);
 
+  /// Factory `fromJson` constructor for [ResponsiveConfig].
   factory ResponsiveConfig.fromJson(Map<String, dynamic> json) {
     return ResponsiveConfig(
       widescreenBreakpoint:

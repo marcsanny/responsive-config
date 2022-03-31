@@ -3,15 +3,22 @@ import 'package:responsive_annotation/responsive_annotation.dart';
 import 'package:responsive_config/domain/class.dart';
 import 'package:responsive_config/domain/variable.dart';
 
+/// Template for generating responsive code for a class annotated with
+/// [ResponsiveConfig].
 class ResponsiveGeneratorTemplate {
+  /// Default constructor for [ResponsiveGeneratorTemplate].
   const ResponsiveGeneratorTemplate(
     this.subject,
     this.config,
   );
 
+  /// The subject of the template.
   final Class subject;
+
+  /// The configuration [BuildOptions.config] of [ResponsiveConfig] annotation.
   final ResponsiveConfig? config;
 
+  /// Function that generates the code.
   String generate() {
     final className = subject.name;
 

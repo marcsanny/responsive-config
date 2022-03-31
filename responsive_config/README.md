@@ -1,21 +1,24 @@
 # responsive_config
 
+[![analyze](https://github.com/marcsanny/responsive-config/actions/workflows/analyze-responsive-config.yml/badge.svg)](https://github.com/marcsanny/responsive-confign/actions/workflows/analyze-responsive-config.yml)
+[![build](https://github.com/marcsanny/responsive-config/actions/workflows/publish-packages.yml/badge.svg)](https://github.com/marcsanny/responsive-confign/actions/workflows/publish-packages.yml)
+
 :warning: This package is still under development, some features might not satisfy expected generated code.
 
 Provides Flutter [Build System](https://github.com/dart-lang/build) builders for handling Responsive class variables.
 
 The builders generate code when they find members annotated with classes defined
-in [package:responsive_annotation].
+in [responsive_annotation](https://github.com/marcsanny/responsive-config/tree/main/responsive_annotation).
 
 ## Setup
 
 To configure your project for
-`responsive_config`, see the [example].
+`responsive_config`, see the [example](https://github.com/marcsanny/responsive-config/tree/main/example).
 
 ## Example
 
 Given a library `example.dart` with an `AppConfig` class annotated with
-[`ResponsiveConfig`] and fields annotated with [`ResponsiveVariable`]:
+`ResponsiveConfig` and fields annotated with `ResponsiveVariable`:
 
 ```dart
 import 'package:flutter/material.dart';

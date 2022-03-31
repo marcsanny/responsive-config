@@ -2,12 +2,14 @@
 
 To use [responsive_config](https://github.com/marcsanny/responsive-config/tree/main/responsive_config) in your flutter application, add these dependencies to your pubspec.yaml.
 
+```yaml
 dependencies:
   responsive_annotation: <latest>
 
 dev_dependencies:
   build_runner: <latest>
   responsive_config: <latest>
+```
 
 Annotate your code with classes defined in [responsive_annotation](https://github.com/marcsanny/responsive-config/tree/main/responsive_annotation/lib/annotations).
 

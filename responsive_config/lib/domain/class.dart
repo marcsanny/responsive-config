@@ -4,7 +4,9 @@ import 'package:source_gen/source_gen.dart';
 
 import 'package:responsive_config/domain/variable.dart';
 
+/// Basic class structure of a class annotated with [ResponsiveConfig].
 class Class {
+  /// Default constructor for the `Class`.
   const Class({
     required this.name,
     required this.desktopBreakpoint,
@@ -15,6 +17,8 @@ class Class {
     required this.variables,
   });
 
+  /// Factory `fromElement` constructor
+  /// for creating a [Class] from a [ClassElement].
   factory Class.fromElement(ClassElement element) {
     final name = element.name;
 
@@ -62,11 +66,25 @@ class Class {
     );
   }
 
+  /// The name of the class.
   final String name;
-  final double desktopBreakpoint;
-  final double tabletBreakpoint;
-  final double laptopBreakpoint;
+
+  /// The breakpoint for `ScreenType.mobile`.
   final double mobileBreakpoint;
+
+  /// The breakpoint for `ScreenType.tablet`.
+  final double tabletBreakpoint;
+
+  /// The breakpoint for `ScreenType.laptop`.
+  final double laptopBreakpoint;
+
+  /// The breakpoint for `ScreenType.desktop`.
+  final double desktopBreakpoint;
+
+  /// The breakpoint for `ScreenType.widescreen`.
   final double widescreenBreakpoint;
+
+  /// All variables annotated with `@ResponsiveVariable<T>`
+  /// of the annotated class.
   final Iterable<Variable> variables;
 }

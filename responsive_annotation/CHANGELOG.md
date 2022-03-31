@@ -1,3 +1,11 @@
+## 0.1.0
+
+- Beta public release
+
+## 0.0.4
+
+- Provide API documentation
+
 ## 0.0.3
 
 - Provide example

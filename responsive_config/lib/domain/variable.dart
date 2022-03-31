@@ -3,7 +3,9 @@ import 'package:analyzer/dart/element/type.dart';
 import 'package:responsive_annotation/responsive_annotation.dart';
 import 'package:source_gen/source_gen.dart';
 
+/// Basic class structure of a class annotated with [ResponsiveVariable]
 class Variable {
+  /// Default constructor for the [Variable].
   const Variable({
     required this.name,
     required this.type,
@@ -14,6 +16,8 @@ class Variable {
     required this.widescreen,
   });
 
+  /// Factory `fromElement` constructor
+  /// for creating a [Variable] from a [FieldElement].
   factory Variable.fromElement(FieldElement element) {
     const annotationChecker = TypeChecker.fromRuntime(ResponsiveVariable);
     final variableAnnotation = annotationChecker.firstAnnotationOf(element);
@@ -62,11 +66,24 @@ class Variable {
     );
   }
 
+  /// The name of the variable.
   final String name;
+
+  /// The type of the variable.
   final DartType type;
+
+  /// The value of this variable for the mobile screen type.
   final dynamic mobile;
+
+  /// The value of this variable for the tablet screen type.
   final dynamic tablet;
+
+  /// The value of this variable for the laptop screen type.
   final dynamic laptop;
+
+  /// The value of this variable for the desktop screen type.
   final dynamic desktop;
+
+  /// The value of this variable for the widescreen screen type.
   final dynamic widescreen;
 }
