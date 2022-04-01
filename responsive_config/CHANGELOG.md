@@ -1,3 +1,7 @@
+## 0.1.5
+
+- Remove direct source_gen import, to prevent using  dart:mirrors.
+
 ## 0.1.0
 
 - Beta public release

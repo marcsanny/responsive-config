@@ -1,5 +1,5 @@
 name: responsive_config
-version: 0.1.0
+version: 0.1.5
 description: >-
   Code generation package, that allows generating 
   responsive classes and responsive variables with annotations.
@@ -12,8 +12,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  responsive_annotation: ^0.0.3
-  source_gen: ^1.0.0 # 1.2.1 version lowers pub.dev points because of dart mirrors.
+  responsive_annotation: ^0.1.0
+  source_gen: ^1.2.1
   analyzer: ^3.4.1
   build: ^2.2.1
     

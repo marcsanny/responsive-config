@@ -11,7 +11,7 @@ targets:
 
 builders:
   responsive_config:
-    import: "package:responsive_config/responsive_config.dart"
+    import: "package:responsive_config/builders/responsive_config_builder.dart"
     builder_factories:
       - responsiveConfigBuilder
     build_extensions: {".dart": ["g.dart"]}
