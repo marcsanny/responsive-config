@@ -1,3 +1,7 @@
+## 0.1.6
+
+- Add copyright notice to dart files
+
 ## 0.1.0
 
 - Beta public release
