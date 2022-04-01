@@ -6,6 +6,8 @@ part of 'example.dart';
 // ResponsiveConfigGenerator
 // **************************************************************************
 
+// ignore_for_file: prefer_const_constructors, prefer_int_literals
+
 abstract class _$ResponsiveAppConfig {
   static AppConfig of(BuildContext context) {
     final screenType = _getScreenType(context);

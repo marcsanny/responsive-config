@@ -44,6 +44,8 @@ class ResponsiveGeneratorTemplate {
     final variables = subject.variables;
 
     return '''
+// ignore_for_file: prefer_const_constructors, prefer_int_literals
+
 abstract class _\$Responsive$className {
   static $className of(BuildContext context) {
     final screenType = _getScreenType(context);

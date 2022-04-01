@@ -11,10 +11,10 @@ targets:
 
 builders:
   responsive_config:
-    import: "package:responsive_config/builders/responsive_config_builder.dart"
+    import: "package:responsive_config/builder.dart"
     builder_factories:
-      - responsiveConfigBuilder
-    build_extensions: {".dart": ["g.dart"]}
+      - responsiveConfig
+    build_extensions: {".dart": ["responsive_config.g.dart"]}
     auto_apply: dependents
     build_to: cache
     applies_builders: ["source_gen|combining_builder"]

@@ -346,14 +346,14 @@ packages:
       name: responsive_annotation
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.3"
+    version: "0.1.6"
   responsive_config:
     dependency: "direct main"
     description:
       name: responsive_config
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.3"
+    version: "0.1.6"
   shelf:
     dependency: transitive
     description:

@@ -1,3 +1,11 @@
+## 0.1.8
+
+- Add ignores for generated code template
+
+## 0.1.7
+
+- Separate builder from library file
+
 ## 0.1.6
 
 - Add copyright notice to dart files
